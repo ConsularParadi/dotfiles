@@ -1,0 +1,13 @@
+org.videolan.VLC
+md.obsidian.Obsidian
+org.onlyoffice.desktopeditors
+org.localsend.localsend_app
+com.protonvpn.www 
+org.signal.Signal
+com.jetbrains.PyCharm-Community
+io.github.flattool.Warehouse
+com.github.tchx84.Flatseal
+com.vivaldi.Vivaldi
+com.sublimetext.three
+com.moonlight_stream.Moonlight
+org.qutebrowser.qutebrowser 

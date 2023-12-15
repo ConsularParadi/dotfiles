@@ -1,0 +1,5 @@
+1) Mount data directory if available or create new one and sync using git [#To be done]
+2) Run setup.sh to install basic packages using dnf and flatpak, browsers, vs-code and set kitty terminal running fish 
+3) Install signal manually from software
+
+## Change sudo permission system so that scripts run for user instead of root.

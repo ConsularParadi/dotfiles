@@ -1,0 +1,4 @@
+vim
+fish
+kitty
+python3-pip

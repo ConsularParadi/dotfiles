@@ -1,6 +1,0 @@
-vim
-fish
-vivaldi-stable
-brave-browser
-code-insiders
-vlc

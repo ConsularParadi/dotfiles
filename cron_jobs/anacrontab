@@ -1,0 +1,3 @@
+SHELL=/bin/sh
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+1  10  cron.mine    run-parts /home/consularparadi/.dotfiles/cron_jobs/cron.daily/
