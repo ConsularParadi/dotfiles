@@ -1,8 +1,0 @@
-org.videolan.VLC
-com.brave.Browser
-md.obsidian.Obsidian
-org.onlyoffice.desktopeditors
-org.localsend.localsend_app
-com.protonvpn.www
-org.mozilla.Thunderbird 
-org.signal.Signal
