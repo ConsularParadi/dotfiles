@@ -1,6 +1,0 @@
-vim
-fish
-vivaldi-stable
-code-insiders
-kitty
-pip

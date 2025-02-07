@@ -1,3 +1,0 @@
-firefox
-libreoffice-core
-gnome-text-editor
