@@ -1,0 +1,7 @@
+[Added Associations]
+text/plain=nvim.desktop;
+
+[Default Applications]
+x-scheme-handler/http=zen-alpha.desktop
+x-scheme-handler/https=zen-alpha.desktop
+image/jpeg=feh.desktop

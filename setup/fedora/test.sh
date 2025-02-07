@@ -1,0 +1,1 @@
+sh ./terminal/terminal.sh

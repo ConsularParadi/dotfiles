@@ -1,0 +1,30 @@
+---
+services:
+  portainer:
+    image: portainer/portainer-ce:latest
+    container_name: portainer
+    restart: unless-stopped
+    security_opt: [no-new-privileges:true]
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ../../config/portainer:/data
+    ports: [9000:9000]
+  nginx-proxy-manager:
+    image: jc21/nginx-proxy-manager:latest
+    restart: unless-stopped
+    volumes:
+      - ../../config/nginx-proxy-manager/data:/data
+      - ../../config/nginx-proxy-manager/letsencrypt:/etc/letsencrypt
+    ports:
+      - 80:80  # Public HTTP Port
+      - 443:443  # Public HTTPS Port
+      - 81:81  # Admin Web Port
+      # Add any other Stream port you want to expose
+      # - '21:21'  # FTP
+
+    # Uncomment the next line if you uncomment anything in the section
+    # environment:
+      # Uncomment this if you want to change the location of
+      # the SQLite DB file within the container
+      # DB_SQLITE_FILE: "/data/database.sqlite"

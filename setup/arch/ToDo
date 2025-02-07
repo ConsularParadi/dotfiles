@@ -1,0 +1,8 @@
+
+add docker to Homelab
+add automatic adding of data partition to fstab
+add code to copy scripts from dotfiles folder to /usr/local/bin
+setup kanata for home row mod and caps-lock to escape -- no uinput in linux-zen
+create systemd services for xwayland-satellite and kanata
+edit coding directory for better setup
+screensharing

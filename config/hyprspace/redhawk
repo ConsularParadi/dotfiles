@@ -1,0 +1,14 @@
+{
+  "listenAddresses": [
+    "/ip4/0.0.0.0/tcp/8001",
+    "/ip4/0.0.0.0/udp/8001/quic-v1",
+    "/ip6/::/tcp/8001",
+    "/ip6/::/udp/8001/quic-v1"
+  ],
+  "peers": [
+  {
+
+  }
+  ],
+  "privateKey": "z23jhTaak5n3hnKbXKJcVvEJh6wT6dM8GNTHsVntoVApH1ok7dGwizc3NMjJCq7rsENnru9kTSDufvAaQWFoDLr9DVpd7s"
+}

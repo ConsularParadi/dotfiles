@@ -1,0 +1,11 @@
+Host metalab
+	Hostname 10.1.45.40
+	User user
+	Port 22
+	Identityfile /home/consularparadi/.ssh/plaksha.key
+
+Host pve-debian
+	Hostname 10.1.45.84
+	User consular 
+	Port 22
+	Identityfile /home/consularparadi/.ssh/plaksha.key

@@ -1,0 +1,31 @@
+Host pve-debian
+	Hostname 10.1.45.84
+	User consular 
+	Port 22
+	Identityfile /home/consularparadi/.ssh/plaksha.key
+
+Host pve 
+Hostname 10.1.45.6
+User root
+Port 22
+Identityfile /home/consularparadi/.ssh/homelab
+
+Host plaksha
+	Hostname 10.1.46.51
+	User rishisharma
+	Port 22
+	Identityfile /home/consularparadi/.ssh/plaksha.key
+
+Host github.com
+	Hostname github.com
+	User git
+	Port 22
+	Identityfile /home/consularparadi/.ssh/github
+
+Host robotics
+  Hostname 10.1.8.69
+  User mangesh_singh
+  Port 22
+  IdentityFile /home/consularparadi/.ssh/plaksha.key
+#	ProxyJump pve-debian
+

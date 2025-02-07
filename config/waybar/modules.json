@@ -1,0 +1,7 @@
+{
+  "custom/exit": {
+  "format": "⏻ POWER",
+  "on-click": "wlogout",
+  "tooltip": false
+  }
+}

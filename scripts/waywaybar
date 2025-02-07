@@ -1,0 +1,7 @@
+
+if pgrep -x "waybar" > /dev/null
+then
+	killall waybar
+else
+	waybar 1>/dev/null 2>&1 &
+fi

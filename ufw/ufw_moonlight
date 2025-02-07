@@ -1,0 +1,4 @@
+[moonlight]
+title=moonlight-stream
+description=Remote Desktop Client for Sunshine
+ports=48010/tcp|48000,48010/udp

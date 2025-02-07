@@ -1,0 +1,17 @@
+{
+  // Postion TOP
+  "layer": "top",
+  "margin-top": 10,
+  "margin-bottom": 10,
+
+  "include": ["$HOME/.config/waybar/modules.json"], 
+
+  "modules-center": ["clock"],
+  "modules-right": ["battery", "custom/exit"],
+  
+ "clock": {
+    "interval": 60,
+    "tooltip": false,
+    "format": "{:%Y-%m-%d -> %H:%M}",
+  },
+}
