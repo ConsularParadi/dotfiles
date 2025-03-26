@@ -5,8 +5,8 @@ return {
     config = function()
       -- Keybindings
       local builtin = require("telescope.builtin")
-      vim.keymap.set('n', '<C-p>', builtin.find_files, {})
-      vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+      vim.keymap.set('n', '<leader>f', builtin.find_files, {})
+      vim.keymap.set('n', '<Ctrl-P>', builtin.live_grep, {})
       -- Config
     end
   },
@@ -23,6 +23,13 @@ return {
         }
       })
       require("telescope").load_extension("ui-select")
+    end
+  },
+  {
+    "nvim-telescope/telescope-file-browser.nvim",
+    dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" },
+    config = function()
+      vim.keymap.set('n', '<leader>fb', ":Telescope file_browser<CR>");
     end
   },
 }

@@ -296,9 +296,9 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+Return { spawn "alacritty"; }
-    Mod+Space { spawn "bash" "-c" "walker"; }
-    Mod+W { spawn "bash" "-c" "walker -m windows"; }
+    Mod+Return { spawn "wezterm"; }
+    Mod+Space { spawn "bash" "-c" "rofi -show run"; }
+    Mod+W { spawn "bash" "-c" "rofi -show window"; }
     Mod+Alt+L { spawn "swaylock"; }
     Mod+Alt+B { spawn "bash" "-c" "waywaybar"; }
     Mod+Alt+N { spawn "bash" "-c" "sunset"; }
@@ -314,9 +314,10 @@ binds {
     XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"; }
     XF86AudioMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
     XF86AudioMicMute     allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
-   XF86MonBrightnessUp allow-when-locked=true { spawn "bash" "-c" "brightnessctl s +%5"; }  
-   XF86MonBrightnessDown allow-when-locked=true { spawn "bash" "-c" "brightnessctl s %5-"; }  
-    
+      XF86MonBrightnessUp     allow-when-locked=true { spawn "light" "-A" "10"; }
+    XF86MonBrightnessDown     allow-when-locked=true { spawn "light" "-U" "10"; }
+
+    Mod+T {toggle-column-tabbed-display;}    
 
     Mod+Q { close-window; }
 

@@ -1,0 +1,8 @@
+pkgs:
+  yay:
+    gparted:
+      deps:
+        - xorg-xhost
+    niri:
+      deps:
+        - light
