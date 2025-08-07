@@ -1,0 +1,16 @@
+[Unit]
+Description=WayVNC Server
+After=greetd.service
+
+[Service]
+ExecStart=/usr/bin/wayvnc 0.0.0.0
+# The above command tells wayvnc to listen on all network interfaces.
+# You can restrict this to a specific IP or interface if you want.
+User=greeter
+Group=greeter
+# Use the same user that greetd uses to run the greeter.
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=greetd.target
