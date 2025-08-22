@@ -218,7 +218,8 @@ layout {
 spawn-at-startup "waybar"
 spawn-at-startup "swaync"
 spawn-at-startup "xwayland-sattelite"
-spawn-at-startup "alacritty"
+spawn-at-startup "ghostty"
+spawn-at-startup "wayvnc 0.0.0.0"
 spawn-at-startup "swww-daemon"
 
 environment {
