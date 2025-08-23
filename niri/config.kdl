@@ -219,8 +219,9 @@ spawn-at-startup "waybar"
 spawn-at-startup "swaync"
 spawn-at-startup "xwayland-sattelite"
 spawn-at-startup "ghostty"
-spawn-at-startup "wayvnc" "0.0.0.0" "5900"
 spawn-at-startup "swww-daemon"
+
+spawn-sh-at-startup "sleep 2 && wayvnc 0.0.0.0 5900"
 
 environment {
   DISPLAY ":0"
